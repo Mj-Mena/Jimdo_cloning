@@ -1,0 +1,47 @@
+<div
+                    class="d4 font-main_font popup_website h-auto w-auto absolute ml40px bg-white inline-flex"
+                  >
+                    <sec class="secPad">
+                      <header
+                        class="mb-margin_bt_sec text-head_size text-head_color font-medium"
+                      >
+                        EXPERTISE, TIPS AND INSPIRATION
+                      </header>
+                      <ul
+                        class="list-none block ul_margin text-nav_color font-bold"
+                      >
+                        <li>
+                          <a href="">
+                            <p>All topics</p>
+                            <p class="font-normal text-under_sec">
+                              Knowledge guide overview
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <p>Website tips</p>
+                            <p class="font-normal text-under_sec">
+                              Get the most out of your website
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <p>Business knowledge</p>
+                            <p class="font-normal text-under_sec">
+                              Everything about your self-employment
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <p>Success stories</p>
+                            <p class="font-normal text-under_sec">
+                              Inspiring stories by real Jimdo customers
+                            </p>
+                          </a>
+                        </li>
+                      </ul>
+                    </sec>
+                  </div>
