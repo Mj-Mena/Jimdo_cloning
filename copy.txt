@@ -1,47 +1,138 @@
-<div
-                    class="d4 font-main_font popup_website h-auto w-auto absolute ml40px bg-white inline-flex"
-                  >
-                    <sec class="secPad">
-                      <header
-                        class="mb-margin_bt_sec text-head_size text-head_color font-medium"
-                      >
-                        EXPERTISE, TIPS AND INSPIRATION
-                      </header>
-                      <ul
-                        class="list-none block ul_margin text-nav_color font-bold"
-                      >
-                        <li>
-                          <a href="">
-                            <p>All topics</p>
-                            <p class="font-normal text-under_sec">
-                              Knowledge guide overview
-                            </p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <p>Website tips</p>
-                            <p class="font-normal text-under_sec">
-                              Get the most out of your website
-                            </p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <p>Business knowledge</p>
-                            <p class="font-normal text-under_sec">
-                              Everything about your self-employment
-                            </p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <p>Success stories</p>
-                            <p class="font-normal text-under_sec">
-                              Inspiring stories by real Jimdo customers
-                            </p>
-                          </a>
-                        </li>
-                      </ul>
-                    </sec>
-                  </div>
+var slides = Array.from(document.querySelectorAll(".slides"));
+const nextArr = document.querySelector(".nextArr");
+const prevArr = document.querySelector(".prevArr");
+var wrap = document.querySelector(".showpic");
+
+wrap.style.transition = ".5s;";
+function getImagesPlusClones() {
+  const firstClone = slides[0].cloneNode();
+  const lastClone = slides[slides.length - 1].cloneNode();
+
+  firstClone.className = "slides first-clone";
+  lastClone.className = "slides last-clone";
+
+  // we need clones to make an infinite loop effect
+  wrap.append(firstClone);
+  wrap.prepend(lastClone);
+
+  // must reassign images to include the newly cloned images
+  slides = Array.from(document.querySelectorAll(".slides"));
+
+  return slides;
+}
+getImagesPlusClones();
+var counter = slides.length - 1;
+/* yes next to */
+nextArr.addEventListener("click", () => {
+  console.log(counter);
+  wrap.style.transition = ".5s";
+  let prevcount = counter + 1;
+  counter >= slides.length - 1 ? (counter = 0) : (counter += 1);
+
+  if (slides[counter].classList.contains("first-clone")) {
+    counter = slides.length - prevcount;
+    console.log(counter);
+  }
+
+  slides[prevcount].classList.remove("activeimg");
+  slides[counter].classList.add("activeimg");
+  wrap.style.transform = `translateX(-${537.9 * (counter + 1)}px)`;
+  slides.style.transform = `translateX(-${537.9 * (counter + 1)}px)`;
+});
+/* yes prev to */
+prevArr.addEventListener("click", () => {
+  let prevcount = counter;
+  counter >= 1 ? (counter -= 1) : (counter = slides.length - 1);
+  slides[prevcount].classList.remove("activeimg");
+  slides[counter].classList.add("activeimg");
+  wrap.style.transform = `translateX(-${537.5 * counter}px)`;
+});
+
+==========================================
+
+<div class="t2 pt-20 pb-10 self-center  relative divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto">
+            <div class="get_portfolio_design">
+                <h2 class="text-5xl text-center">Get portfolio design inspiration with these examples</h2>
+            </div>
+         </div>
+         <div class="t2 self-center  relative divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto">
+            <div class="get_portfolio_design">
+                <p class=" pb-5 text-center text-xl ln140">Artists ♡ Jimdo! Spark your creativity with these website portfolio examples built with Jimdo.</p>
+            </div>
+         </div>
+         <div class="items-center flex justify-center pt-16 pb-16 w-full h-full ">
+            <div class="cour_cont w-full h-full justify-center overflow-x-hidden">
+                
+                <div class="showpic h-96 flex">
+                    <img class="slides" src="../images/website-1.png" alt="">
+                    <img class="slides " src="../images/website-11.png" alt="">
+                    <img class="slides" src="../images/website-12.png" alt="">
+                    <img class="slides" src="../images/website-13.png" alt="">
+                    <img class="slides" src="../images/website-14.png" alt="">
+                    <img class="slides" src="../images/website-15.png" alt="">
+                </div>
+                <div class="absolute left-5">
+                    <i class='z-40 prevArr bx bx-left-arrow-alt text-4xl' ></i>
+                 </div>
+                 <div class="absolute right-5">
+                    <i class='z-40 nextArr bx bx-right-arrow-alt text-4xl' ></i>
+                 </div>
+            </div>
+         </div>
+
+         ========================
+         <div class="cour_cont w-full h-full justify-center overflow-x-hidden">
+                <div class="showpic h-96 flex">
+                    <div><img class="slides" src="../images/website-1.png" alt=""></div>
+                    <div><img class="slides" src="../images/website-11.png" alt=""></div>
+                    <div><img class="slides" src="../images/website-12.png" alt=""></div>
+                    <div><img class="slides" src="../images/website-13.png" alt=""></div>
+                    <div><img class="slides" src="../images/website-14.png" alt=""></div>
+                    <div><img class="slides" src="../images/website-15.png" alt=""></div>
+                </div>
+                
+            </div>
+
+            ================
+            opbtn.addEventListener("click", () => {
+  dropI.forEach((element) => {
+    element.classList.contains("hauto")
+      ? element.classList.remove("hauto")
+      : element.classList.add("hauto");
+  });
+});
+==============
+ 
+    .burger{
+    cursor: pointer;
+    display: block;
+    height: 19px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    width: 25px;
+    z-index: 1;
+    }
+    .divgrid{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
+    .HamburgerButton-module--iconHamburgerLine--2c0d1{
+        background-color: #001453;
+      display: block;
+      height: 3px;
+      left: 0;
+      opacity: 1;
+      position: absolute;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+      width: 100%;
+    }
+
+     
+  }
+  @media(max-width :980px) {
+    
+  }

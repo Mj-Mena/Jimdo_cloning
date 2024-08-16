@@ -9,6 +9,8 @@ module.exports = {
         head_color: "rgb(0 0 0 / 70%)",
         dropdown: "#f8f8f8",
         sub_cap: "#6d6d6d",
+        footer: "#001453",
+        ft: "#001453",
       },
       fontSize: {
         nav_size: "16px",

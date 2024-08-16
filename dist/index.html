@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../src/output.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link
       href="https://fonts.cdnfonts.com/css/euclid-circular-a"
       rel="stylesheet"
@@ -19,13 +20,17 @@
       href="https://fonts.cdnfonts.com/css/helvetica-255"
       rel="stylesheet"
     />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
   </head>
   <body>
     <div class="whole_cont w-full h-full">
         <nav class="nav_container fixed w-full ">
             <div class="div1_cont w-full bg-white justify-center flex flex-col h-full">
                 <div class="div2_cont w-full h-full block">
-                    <div class="z-10 divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto">
+                    <div class="smol_size z-10 divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto">
                             <!-------------------SEC 1--------------->
                         <div class="sec1_cont flex flex-row">
                             <div class="div_a center w-full h-full">
@@ -33,6 +38,9 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 37" class="svgh"><path fill="#010334" d="M82.37 9.905a8.58 8.58 0 00-8.579 8.58 8.58 8.58 0 008.58 8.58 8.58 8.58 0 008.58-8.58 8.58 8.58 0 00-8.58-8.58zm0 13.393a4.813 4.813 0 110-9.625 4.813 4.813 0 010 9.625zM35.137 10.23h3.608l5.469 10.267 5.444-10.267h3.633v16.513h-4.057V17.92l-4.618 8.823h-.803l-4.618-8.8v8.8h-4.057V10.23h-.001zm-12.252.057h-4.072v9.86a2.847 2.847 0 01-5.693 0H9.048a6.919 6.919 0 1013.837 0v-9.86zm40.54-.057h-6.1v16.513h6.1a8.256 8.256 0 100-16.513zm-.495 13.068h-1.546v-9.625h1.546a4.812 4.812 0 110 9.625zM31.04 10.287h-4.086v16.4h4.086v-16.4z"></path><path fill="#010334" d="M97.537 2.463V34.51H2.463V2.463h95.074zM100 0H0v36.973h100V0z"></path></svg>
                                 </a>
                             </div>
+                        </div>
+                        <div class="burger">
+                            <span class="HamburgerButton-module--root--3481a"><span class="HamburgerButton-module--iconHamburgerLine--2c0d1"></span><span class="HamburgerButton-module--iconHamburgerLine--2c0d1 top-2"></span><span class="HamburgerButton-module--iconHamburgerLine--2c0d1 top-4"></span>
                         </div>
                             <!-------------------SEC 2--------------->
                         <div class="sec2_cont flex flex-row text-nav_color text-nav_size font-semibold leading-nav_lh">
@@ -288,8 +296,8 @@
       </nav>
       <!--MAIN-->
       <main class="flex w-full h-full flex-col">
-        <div class="cont_landing w-full h-screen flex pt-32 pb-32">
-            <div class="main_cont_landing self-center  relative cgap divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto">
+        <div class="cont_landing w-full h-full flex pt-32 pb-32">
+            <div class=" land_small main_cont_landing self-center  relative cgap divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto">
                 <div class="land_left flex pt-3">
                     <!--Title-->
                         <h1 class="text-5xl  pb-6 ln125">Create an Online Portfolio With Jimdo</h1>
@@ -335,6 +343,7 @@
                             </p>
                         </div>
                 </div>
+                
 
                 <div class="land_right max-w-screen-sm flex">
                     <div class="max-w-screen-sm">
@@ -344,14 +353,14 @@
             </div>
         </div>
         <!--Portfolio-->
-        <div class="portfolio_taeser bvgap self-center  relative cgap divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto">
+        <div class="smol_port portfolio_taeser bvgap self-center  relative cgap divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto">
             <div class="inside_teaser ">
-                <h2 class="text-5xl ln125 text-center">Portfolio site features that matter</h2>
+                <h2 class=" text-5xl ln125 text-center">Portfolio site features that matter</h2>
             </div>
         </div>
         <!--beautiful Visuals-->
         <div class="beautiful_visual pb-16">
-            <div class="t2 self-center  relative cgap  divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto">
+            <div class="t2 self-center changeGrid  relative cgap  divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto">
                 <div class="bv_text_cont">
                    <div class="bv_text flex flex-col h-full justify-center">
                         <h3 class="hm ln125 tx32 mb-5 font-normal">Beautiful visuals, by design</h3>
@@ -365,10 +374,11 @@
                 </div>
             </div>
         </div>
+        
         <!--Help Search-->
         <div class="help_search  pb-16">
-            <div class="t2 self-center  relative cgap  divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto">
-                <div class="help_s_pic flex">
+            <div class="t2 self-center changeGrid  relative cgap  divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto">
+                <div class="help_s_pic flex col-start-2">
                     <div class="max-w-screen-sm">
                         <img src="../images/feature-2.png" alt="" srcset="" class="max-w-full">
                     </div>
@@ -384,9 +394,9 @@
         </div>
         <!-- Connect SocMed -->
         <div class="connect_socmed  pb-16">
-            <div class="t2 self-center  relative cgap  divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto">
+            <div class="t2 self-center changeGrid relative cgap  divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto">
                
-                <div class="hs_text_cont">
+                <div class="hs_text_cont col-start-2">
                    <div class="bv_text flex flex-col h-full justify-center">
                         <h3 class="hm ln125 tx32 mb-5 font-normal">Connect to social media in seconds</h3>
                         <p class="pm tx16 mb-5">Already using Instagram or Facebook? That makes it even easier to build your online portfolio. Pull in photos right from your existing accounts, so your website is ready in a snap.</p>
@@ -401,22 +411,28 @@
             </div>
         </div>
         <!-- How to make -->
-         <div class="htm bg-white" >
-            <div class="t2 self-center  relative cgap divgrid justify-center box-border max-w-maxW  w-full h-screen grid grid-cols-12 m-auto">
+         <div class="htm bg-white pb-16 pt-16" >
+            <div class="t2 self-center changeGrid relative cgap divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto ">
                 <div class="htm_text flex text-center">
                     <div class="bv_text flex flex-col h-full justify-center">
-                         <h3 class="hm ln125 mb-10 font-normal text-5xl">How to make an online portfolio</h3>
+                         <h3 class="htm ln125 mb-10 font-normal text-5xl">How to make an online portfolio</h3>
                          
-                         <p class="pm tx16 mb-10">If you're a photographer, artist, designer, model, or creative, putting your work online is the best way to reach a larger audience. And you can do it in 4 easy steps.
+                         <p class="pm tx16 mb-10 leading-tight">If you're a photographer, artist, designer, model, or creative, putting your work online is the best way to reach a larger audience. And you can do it in 4 easy steps.
                          </p>
-                         <div class="order_list">
-                            <ol>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                         <div class="order_list mb-10">
+                            <ol class="mb-10 mt-10">
+                                <li class="mb-5 ml-7">Sign up or log in with social media. You’ll also be able to choose a domain (website address) for your portfolio site.</li>
+                                <li class="mb-5 ml-7">Tell us a little about your work. Answer a few questions and our portfolio maker creates the website for you.</li>
+                                <li class="mb-5 ml-7">Add your images. Connect your social media accounts to pull in your images from around the web, or easily upload them.</li>
+                                <li class="mb-5 ml-7">Publish your site—and you’re online! Then follow our quick and easy tips to optimize your portfolio site even more!</li>
                             </ol>
                          </div>
+                         <div class="w-full text-center flex flex-col items-center">
+                            <button class=" st2 hover:bg-nav_color hover:border-nav_color bg-hover_color text-white items-center rounded box-border font-medium content-center">
+                                Start Now
+                            </button>
+                         </div>
+                         
                     </div> 
                  </div>
 
@@ -427,7 +443,340 @@
                 </div>
             </div>
          </div>
+
+         <!--what kind of portfolio website will u create-->
+         <div class="wkp pb-32 pt-32 h-full">
+            <div class="t2 self-center  relative changeGrid divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto ">
+                <div class="col-start-3 flex wkp_text">
+                    <h1 class="text-5xl text-center wkph1">What kind of portfolio website will you create?</h1>
+                </div>
+                <div class="pic1 flex flex-col">
+                    <div class="mb-2">
+                        <img src="../images//branch-1.png" alt="">
+                    </div>
+                    <h3 class="mb-4 text-2xl font-medium ln133">Graphic designer portfolio</h3>
+                    <p class=" ln155 text-lg">Your graphic design online portfolio shows off your skills and work examples in one place, from different design programs to different mediums.
+                    </p>
+                    <div class="">
+                        <a href="" class="startnow_arrow flex brd">
+                            <span class="text-lg">Start Now </span>
+                            <span class="inline-block ml-2 translate-y-half">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-module--arrowRight--ca287"><path d="M6.352 11.194l3.8-3.291H0V6.09h10.151l-3.805-3.29 1.417-1.245L14 7.003l-6.231 5.441-1.417-1.25z" fill="currentColor"></path></svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic2">
+                    <div class="mb-2">
+                        <img src="../images//branch-2.png" alt="">
+                    </div>
+                    <h3 class="mb-4 text-2xl font-medium ln133">Photographer portfolio</h3>
+                    <p class=" ln155 text-lg">Building a photography portfolio means focusing on the work, not the website. Jimdo’s modern designs keep your images front and center. You can accept bookings, too!
+                    </p>
+                    <div class="">
+                        <a href="" class="startnow_arrow flex brd">
+                            <span class="text-lg">Start Now </span>
+                            <span class="inline-block ml-2 translate-y-half">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-module--arrowRight--ca287"><path d="M6.352 11.194l3.8-3.291H0V6.09h10.151l-3.805-3.29 1.417-1.245L14 7.003l-6.231 5.441-1.417-1.25z" fill="currentColor"></path></svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pic3">
+                    <div class="mb-2">
+                        <img src="../images//branch-3.png" alt="">
+                    </div>
+                    <h3 class="mb-4 text-2xl font-medium ln133">Artist portfolio</h3>
+                    <p class=" ln155 text-lg">Want to put your art online and sell it, too? Upload high-resolution images, post new work, and build your client base with a portfolio and online store all in one.
+                    </p>
+                    <div class="">
+                        <a href="" class="startnow_arrow flex brd">
+                            <span class="text-lg">Start Now </span>
+                            <span class="inline-block ml-2 translate-y-half">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-module--arrowRight--ca287"><path d="M6.352 11.194l3.8-3.291H0V6.09h10.151l-3.805-3.29 1.417-1.245L14 7.003l-6.231 5.441-1.417-1.25z" fill="currentColor"></path></svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="pic4">
+                    <div class="mb-2">
+                        <img src="../images//branch-4.png" alt="">
+                    </div>
+                    <h3 class="mb-4 text-2xl font-medium ln133">Model portfolio</h3>
+                    <p class=" ln155 text-lg">You’re versatile and stylish, and your portfolio can be too. A website is a platform that you control, and it’s easy to use images right from your social media accounts.
+                    </p>
+                    <div class="">
+                        <a href="" class="startnow_arrow flex brd">
+                            <span class="text-lg">Start Now </span>
+                            <span class="inline-block ml-2 translate-y-half">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-module--arrowRight--ca287"><path d="M6.352 11.194l3.8-3.291H0V6.09h10.151l-3.805-3.29 1.417-1.245L14 7.003l-6.231 5.441-1.417-1.25z" fill="currentColor"></path></svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <!--Carousel-->
+         <div class="t2 pt-20 pb-10 self-center changeGrid relative divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto">
+            <div class="get_portfolio_design">
+                <h2 class="text-5xl text-center">Get portfolio design inspiration with these examples</h2>
+            </div>
+         </div>
+         <div class="t2 self-center changeGrid relative divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto">
+            <div class="get_portfolio_design">
+                <p class=" pb-5 text-center text-xl ln140">Artists ♡ Jimdo! Spark your creativity with these website portfolio examples built with Jimdo.</p>
+            </div>
+         </div>
+         
+         <div class="items-center flex justify-center pt-16 pb-16 w-full h-full ">
+            <div class="cour_cont w-full h-full justify-center overflow-x-hidden">
+
+
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img class="slides" src="../images/website-1.png" alt=""></div>
+                    <div class="swiper-slide"><img class="slides" src="../images/website-11.png" alt=""></div>
+                    <div class="swiper-slide"><img class="slides" src="../images/website-12.png" alt=""></div>
+                    <div class="swiper-slide"><img class="slides" src="../images/website-13.png" alt=""></div>
+                    <div class="swiper-slide"><img class="slides" src="../images/website-14.png" alt=""></div>
+                    <div class="swiper-slide"><img class="slides" src="../images/website-15.png" alt=""></div>
+                    ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination mt-8"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+         </div>
+            <!--Online Portfolio-->
+            <div class="onlinePort pb-16 pt-16">
+                <div class="t2 self-center  relative divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto ">
+                    <div class="oP_div text-5xl ln125 text-center">
+                        <h2>Online portfolio FAQ</h2>
+                    </div>
+                    <div class="list_drop">
+                        <ol >
+                            <li >
+                                <button class="mb-7 ol_bt flex justify-between w-full" id="ol_bt">
+                                    <h3 class="text-2xl ln150 pb-4 pt-4 font-medium">What are the benifits of having online portfolio?</h3>
+                                    <span aria-hidden="true" class="cross Icon-module_icon__q2Gc1 pl-3 pb-4 pt-4"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path fill="currentColor" d="M11 9V3c0-.555-.448-1-1-1-.556 0-1 .448-1 1v6H3c-.555 0-1 .448-1 1 0 .556.448 1 1 1h6v6c0 .555.448 1 1 1 .556 0 1-.448 1-1v-6h6c.555 0 1-.448 1-1 0-.556-.448-1-1-1h-6z"></path>
+                                        </svg></span>
+                                </button>
+                                <div class="drop_info h-auto overflow-hidden" >
+                                    <div class="info_pad pb-5">
+                                        <div class="ins_info pt-4">
+                                            <p class="text-base leading-6">Creating an online portfolio is one of the best ways to show off your best work, all in one place. Even if you’re already using different social media accounts, putting your portfolio online gives you an online hub for potential clients, customers, agencies, and recruiters to see what you can do. It’s all on a platform you control, no matter how social media trends change. Plus, you can customize your design exactly how you want it.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li >
+                                <button class="mb-7 ol_bt flex justify-between w-full" id="ol_bt">
+                                    <h3 class="text-2xl ln150 pb-4 pt-4 font-medium">How do I make a good get_portfolio?</h3>
+                                    <span aria-hidden="true" class="cross Icon-module_icon__q2Gc1 pl-3 pb-4 pt-4"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path fill="currentColor" d="M11 9V3c0-.555-.448-1-1-1-.556 0-1 .448-1 1v6H3c-.555 0-1 .448-1 1 0 .556.448 1 1 1h6v6c0 .555.448 1 1 1 .556 0 1-.448 1-1v-6h6c.555 0 1-.448 1-1 0-.556-.448-1-1-1h-6z"></path>
+                                        </svg></span>
+                                </button>
+                                <div class="drop_info h-auto overflow-hidden" >
+                                    <div class="info_pad pb-5">
+                                        <div class="ins_info pt-4">
+                                            <p class="text-base leading-6">Fortunately with Jimdo, most of the portfolio creation is already done for you! The best way to create a good online portfolio is to start with a custom domain. That shows the world that you take your project seriously and professionally. Once you put your portfolio online, make sure you use high-quality images, and choose a high-impact image for the header of your homepage to grab people’s attention. In addition to design, be sure to take a few minutes to optimize your site for search engines (Jimdo will walk you through how to do that). That way, your portfolio will start showing up in search engines for the right audience, and your traffic will grow.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li >
+                                <button class="mb-7 ol_bt flex justify-between w-full" id="ol_bt">
+                                    <h3 class="text-2xl ln150 pb-4 pt-4 font-medium">What should I put in my online portfolio?</h3>
+                                    <span aria-hidden="true" class="cross Icon-module_icon__q2Gc1 pl-3 pb-4 pt-4"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path fill="currentColor" d="M11 9V3c0-.555-.448-1-1-1-.556 0-1 .448-1 1v6H3c-.555 0-1 .448-1 1 0 .556.448 1 1 1h6v6c0 .555.448 1 1 1 .556 0 1-.448 1-1v-6h6c.555 0 1-.448 1-1 0-.556-.448-1-1-1h-6z"></path>
+                                        </svg></span>
+                                </button>
+                                <div class="drop_info h-auto overflow-hidden" >
+                                    <div class="info_pad pb-5">
+                                        <div class="ins_info pt-4">
+                                            <p class="text-base leading-6">A good portfolio website doesn’t have to be complicated. It’s a good idea to include a short bio and headshot on your About page, as well as any relevant skills or experience. Then, you can have some fun putting together the visuals on your site, either in a slide show or just by placing the images on your web pages. When you do this, try to choose just your best work. Don’t post everything you’ve ever done—be picky and keep in mind that many online visitors have short attention spans and don’t want to browse through years of your work. You can also easily add a contact form so visitors know how to get in touch with you.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li >
+                                <button class="mb-7 ol_bt flex justify-between w-full" id="ol_bt">
+                                    <h3 class="text-2xl ln150 pb-4 pt-4 font-medium">Why is an online portfolio important for a designer?</h3>
+                                    <span aria-hidden="true" class="cross Icon-module_icon__q2Gc1 pl-3 pb-4 pt-4"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path fill="currentColor" d="M11 9V3c0-.555-.448-1-1-1-.556 0-1 .448-1 1v6H3c-.555 0-1 .448-1 1 0 .556.448 1 1 1h6v6c0 .555.448 1 1 1 .556 0 1-.448 1-1v-6h6c.555 0 1-.448 1-1 0-.556-.448-1-1-1h-6z"></path>
+                                        </svg></span>
+                                </button>
+                                <div class="drop_info overflow-hidden" >
+                                    <div class="info_pad pb-5">
+                                        <div class="ins_info pt-4">
+                                            <p class="text-base leading-6">When you’re a designer, visuals are a huge part of the story. An online portfolio helps you go beyond a paper resume and portfolio and really start attracting the attention of hiring managers and potential customers. By putting your designer portfolio online, you can show off all sorts of work beyond print—including video, multimedia, and more. It’s also a good way to let your personality shine through and share your photography, modeling shots, or graphic design work in a more personal way.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li >
+                                <button class="mb-7 ol_bt flex justify-between w-full" id="ol_bt">
+                                    <h3 class="text-2xl ln150 pb-4 pt-4 font-medium">How do I choose the right design for my portfolio website?</h3>
+                                    <span aria-hidden="true" class="cross Icon-module_icon__q2Gc1 pl-3 pb-4 pt-4"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path fill="currentColor" d="M11 9V3c0-.555-.448-1-1-1-.556 0-1 .448-1 1v6H3c-.555 0-1 .448-1 1 0 .556.448 1 1 1h6v6c0 .555.448 1 1 1 .556 0 1-.448 1-1v-6h6c.555 0 1-.448 1-1 0-.556-.448-1-1-1h-6z"></path>
+                                        </svg></span>
+                                </button>
+                                <div class="drop_info h-auto overflow-hidden" >
+                                    <div class="info_pad pb-5">
+                                        <div class="ins_info pt-4">
+                                            <p class="text-base leading-6">The best portfolio website designs and templates are clean, modern, and show off your work without distractions. When you sign up for Jimdo, you’ll be able to pick a style that fits you, and then the design of the website is taken care of! Once you create your online portfolio, you can tweak it and customize it as you like, but all the heavy lifting is done for you. So you can spend more time on your actual work, and less time laboring over your website.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-------------------Showoff-------------->
+            <div class="show_off pt-32 pb-32">
+                <div class="t2 self-center  relative divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto ">
+                    <div class="showh2 text-center">
+                        <h2 class=" ln125 text-5xl mb-5 font-normal">
+                            Show off your hardwork
+                        </h2>
+                        <p class="text-xl ln140">
+                            A portfolio creator for every profession
+                        </p>
+                    </div>
+                    <div class=" lastgrid">
+                        <div class="flex flex-col text-center justify-center">
+                            <h3 class="ln140 text-xl font-medium mb-5">Freelancer</h3>
+                            <p class="mb-5 text-base leading-6  text-center">Every freelancer needs a website to attract new customers, find work, and show off your skills. Build your own portfolio, with no coding required!</p>
+                            <a href="" class="pb-1 text-lg linefree flex items-center self-center">
+                                <span>Freelance website how-to </span>
+                                <span class="ml-2 index-module--icon--03201"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-module--arrowRight--ca287"><path d="M6.352 11.194l3.8-3.291H0V6.09h10.151l-3.805-3.29 1.417-1.245L14 7.003l-6.231 5.441-1.417-1.25z" fill="currentColor"></path></svg></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class=" lastgrid">
+                        <div class="flex flex-col text-center justify-center">
+                            <h3 class="ln140 text-xl font-medium mb-5">Photography</h3>
+                            <p class="mb-5 text-base leading-6  text-center">Photographers love Jimdo for its beautiful and easy portfolio websites. See how you can get your photos online quickly and start taking bookings.</p>
+                            <a href="" class="pb-1 text-lg linefree flex items-center self-center">
+                                <span>Freelance website how-to </span>
+                                <span class="ml-2 index-module--icon--03201"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-module--arrowRight--ca287"><path d="M6.352 11.194l3.8-3.291H0V6.09h10.151l-3.805-3.29 1.417-1.245L14 7.003l-6.231 5.441-1.417-1.25z" fill="currentColor"></path></svg></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class=" lastgrid">
+                        <div class="flex flex-col text-center justify-center">
+                            <h3 class="ln140 text-xl font-medium mb-5">Design</h3>
+                            <p class="mb-5 text-base leading-6  text-center">Create an art portfolio that matches your style. Our built-in tools will help you improve your search engine ranking and even sell your artwork online.</p>
+                            <a href="" class="pb-1 text-lg linefree flex ln155 items-center self-center">
+                                <span>Freelance website how-to </span>
+                                <span class="ml-2 index-module--icon--03201"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-module--arrowRight--ca287"><path d="M6.352 11.194l3.8-3.291H0V6.09h10.151l-3.805-3.29 1.417-1.245L14 7.003l-6.231 5.441-1.417-1.25z" fill="currentColor"></path></svg></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
       </main>
+      <!--Footer-->
+      <footer>
+        <div class="bg-white pt-10 pb-10">
+            <div class="t2 self-center  relative divgrid justify-center box-border max-w-maxW  w-full h-full grid grid-cols-12 m-auto ">
+                <div class="jfooter mb-10">
+                    <div class="mb-10">
+                        <a class="logoft " aria-label="Jimdo" href="/">
+                            <svg class="logoft h-auto w-32" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 37">
+                                <path fill="#010334" d="M82.37 9.905a8.58 8.58 0 00-8.579 8.58 8.58 8.58 0 008.58 8.58 8.58 8.58 0 008.58-8.58 8.58 8.58 0 00-8.58-8.58zm0 13.393a4.813 4.813 0 110-9.625 4.813 4.813 0 010 9.625zM35.137 10.23h3.608l5.469 10.267 5.444-10.267h3.633v16.513h-4.057V17.92l-4.618 8.823h-.803l-4.618-8.8v8.8h-4.057V10.23h-.001zm-12.252.057h-4.072v9.86a2.847 2.847 0 01-5.693 0H9.048a6.919 6.919 0 1013.837 0v-9.86zm40.54-.057h-6.1v16.513h6.1a8.256 8.256 0 100-16.513zm-.495 13.068h-1.546v-9.625h1.546a4.812 4.812 0 110 9.625zM31.04 10.287h-4.086v16.4h4.086v-16.4z"></path><path fill="#010334" d="M97.537 2.463V34.51H2.463V2.463h95.074zM100 0H0v36.973h100V0z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <ul class="flex">
+                        <li class="h-14 w-14 p-3">
+                            <a href="" >
+                                <svg width="28" class="svgcl" height="28" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M24 0C10.745 0 0 10.81 0 24.147 0 36.199 8.776 46.189 20.25 48V31.127h-6.094v-6.98h6.094v-5.32c0-6.052 3.583-9.395 9.065-9.395 2.626 0 5.372.472 5.372.472v5.942h-3.026c-2.981 0-3.911 1.862-3.911 3.771v4.53h6.656l-1.064 6.98H27.75V48C39.224 46.189 48 36.199 48 24.147 48 10.81 37.255 0 24 0z" fill="currentColor" fill-rule="evenodd"></path></svg>
+                            </a>
+                        </li>
+                        <li class="h-14 w-14 p-3">
+                            <a href="">
+                                <svg width="28" class="svgcl" height="28" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="instagram_svg__a" d="M0 .015h47.8V47.81H0z"></path></defs><g fill="none" fill-rule="evenodd"><mask id="instagram_svg__b" fill="#fff"><use xlink:href="#instagram_svg__a"></use></mask><path d="M23.955 2.372c-5.862 0-6.597.025-8.899.13-2.297.104-3.866.47-5.239 1.003a10.568 10.568 0 00-3.823 2.49c-1.2 1.2-1.938 2.403-2.49 3.822-.533 1.373-.898 2.942-1.002 5.24-.105 2.301-.13 3.036-.13 8.898 0 5.861.025 6.596.13 8.898.104 2.298.47 3.867 1.003 5.24a10.573 10.573 0 002.49 3.822c1.2 1.2 2.403 1.938 3.822 2.49 1.373.533 2.942.898 5.24 1.003 2.301.105 3.036.13 8.898.13 5.861 0 6.596-.025 8.898-.13 2.298-.105 3.867-.47 5.24-1.003 1.419-.552 2.622-1.29 3.822-2.49 1.2-1.2 1.938-2.403 2.49-3.822.533-1.373.898-2.942 1.003-5.24.105-2.302.13-3.037.13-8.898 0-5.862-.025-6.597-.13-8.899-.105-2.297-.47-3.866-1.003-5.239-.552-1.42-1.29-2.623-2.49-3.823-1.2-1.2-2.403-1.938-3.822-2.49-1.373-.533-2.942-.898-5.24-1.002-2.302-.105-3.037-.13-8.898-.13zm0 3.889c5.763 0 6.445.022 8.721.125 2.105.096 3.247.448 4.008.744 1.007.391 1.726.859 2.482 1.614.755.755 1.223 1.474 1.614 2.482.296.76.647 1.903.743 4.007.104 2.276.126 2.959.126 8.722s-.022 6.445-.126 8.721c-.096 2.105-.447 3.247-.743 4.008-.391 1.007-.86 1.726-1.614 2.482-.756.755-1.475 1.223-2.482 1.614-.76.296-1.903.647-4.008.743-2.275.104-2.958.126-8.721.126-5.764 0-6.446-.022-8.722-.126-2.104-.096-3.247-.447-4.007-.743-1.008-.391-1.727-.86-2.482-1.614-.755-.756-1.223-1.475-1.614-2.482-.296-.76-.648-1.903-.744-4.008-.103-2.276-.125-2.958-.125-8.721s.022-6.446.125-8.722c.096-2.104.448-3.247.744-4.007.391-1.008.859-1.727 1.614-2.482.755-.755 1.474-1.223 2.482-1.614.76-.296 1.903-.648 4.007-.744 2.276-.103 2.959-.125 8.722-.125z" fill="currentColor" mask="url(#instagram_svg__b)"></path><path d="M23.9 31.882a7.967 7.967 0 110-15.934 7.967 7.967 0 010 15.934zm-12.273-7.967c0 6.778 5.495 12.273 12.273 12.273s12.273-5.495 12.273-12.273S30.678 11.642 23.9 11.642s-12.273 5.495-12.273 12.273zm27.899-12.758a2.868 2.868 0 11-5.736 0 2.868 2.868 0 015.736 0" fill="currentColor"></path></g></svg>
+                            </a>
+                        </li>
+                        <li class="h-14 w-14 p-3">
+                            <a href="">
+                                <svg width="28" class="svgcl" height="28" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M23.99 0C10.722 0 0 10.741 0 23.99c0 10.17 6.318 18.857 15.243 22.351-.217-1.895-.395-4.817.08-6.89.433-1.876 2.803-11.927 2.803-11.927s-.71-1.44-.71-3.554c0-3.337 1.934-5.824 4.343-5.824 2.053 0 3.04 1.54 3.04 3.376 0 2.053-1.302 5.134-1.994 7.997-.572 2.389 1.205 4.344 3.555 4.344 4.264 0 7.542-4.502 7.542-10.979 0-5.745-4.127-9.754-10.03-9.754-6.832 0-10.84 5.114-10.84 10.406 0 2.053.79 4.265 1.777 5.47a.714.714 0 01.158.69c-.178.75-.593 2.39-.672 2.725-.098.435-.355.533-.81.316-2.96-1.421-4.817-5.805-4.817-9.32 0-7.562 5.49-14.512 15.855-14.512 8.313 0 14.79 5.923 14.79 13.86 0 8.274-5.213 14.928-12.44 14.928-2.429 0-4.72-1.264-5.49-2.764l-1.5 5.706c-.533 2.093-1.994 4.7-2.981 6.299 2.25.69 4.62 1.066 7.108 1.066C37.259 48 48 37.259 48 24.01 47.98 10.74 37.239 0 23.99 0z" fill="currentColor" fill-rule="evenodd"></path></svg>
+                            </a>
+                        </li>
+                       
+                        <li class="h-14 w-14 p-3">
+                            <a href="">
+                                <svg width="28" class="svgcl" height="28" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M23.76 0c13.122 0 23.76 10.638 23.76 23.76 0 13.122-10.638 23.76-23.76 23.76C10.638 47.52 0 36.882 0 23.76 0 10.638 10.638 0 23.76 0zm6.213 13.603a5.73 5.73 0 00-5.726 5.726c0 .451.048.89.155 1.307-4.764-.238-8.982-2.519-11.81-5.988a5.747 5.747 0 00-.771 2.875 5.703 5.703 0 002.554 4.764 5.627 5.627 0 01-2.59-.713v.071a5.735 5.735 0 004.598 5.62 5.71 5.71 0 01-1.51.202 5.47 5.47 0 01-1.08-.107 5.72 5.72 0 005.346 3.98 11.515 11.515 0 01-8.483 2.364 15.96 15.96 0 008.756 2.59c10.537 0 16.3-8.732 16.3-16.3 0-.25 0-.499-.013-.737a11.736 11.736 0 002.863-2.97c-1.021.452-2.126.76-3.29.903a5.725 5.725 0 002.518-3.172 11.6 11.6 0 01-3.635 1.39 5.7 5.7 0 00-4.182-1.805z" fill="currentColor"></path></svg>
+                            </a>
+                        </li>
+                        <li class="h-14 w-14 p-3">
+                            <a href="">
+                                <svg width="28" class="svgcl" height="28" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="youtube_svg__a" d="M0 0h47.91v33.537H0z"></path></defs><g transform="translate(0 7)" fill="none" fill-rule="evenodd"><mask id="youtube_svg__b" fill="#fff"><use xlink:href="#youtube_svg__a"></use></mask><path d="M19.164 23.955V9.582l12.447 7.186-12.447 7.187zM46.909 5.237A6.001 6.001 0 0042.673 1c-3.736-1-18.718-1-18.718-1S8.973 0 5.237 1A6 6 0 001 5.237C0 8.973 0 16.768 0 16.768S0 24.564 1.001 28.3a6 6 0 004.236 4.236c3.736 1 18.718 1 18.718 1s14.982 0 18.718-1a6.001 6.001 0 004.236-4.236c1-3.736 1-11.532 1-11.532s0-7.795-1-11.531z" fill="currentColor" mask="url(#youtube_svg__b)"></path></g></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fgrid mb-10 flex-col">
+                    <div class="mb-2">
+                        <b class="text-base leading-6 mb-2 text-sub_cap">Products</b>
+                    </div>
+                    <a class="text-base mb-2 leading-6 text-ft font-medium hover:text-hover_color" href="">Website</a>
+                    <a class="text-base mb-2 leading-6 text-ft font-medium hover:text-hover_color" href="">Online Store</a>
+                    <a class="text-base mb-2 leading-6 text-ft font-medium hover:text-hover_color" href="">Domain</a>
+                    <a class="text-base mb-2 leading-6 text-ft font-medium hover:text-hover_color" href="">Logo</a>
+                </div>
+
+                <div class="fgrid mb-10 flex-col">
+                    <div class="mb-2">
+                        <b class="text-base leading-6 mb-2 text-sub_cap">About us</b>
+                    </div>
+                    <a class="text-base mb-2 leading-6 text-ft font-medium hover:text-hover_color" href="">About Jimdo</a>
+                    <a class="text-base mb-2 leading-6 text-ft font-medium hover:text-hover_color" href="">Careers</a>
+                    <a class="text-base mb-2 leading-6 text-ft font-medium hover:text-hover_color" href="">Affiliates</a>
+                </div>
+
+                <div class="fgrid mb-10 flex-col">
+                    <div class="mb-2">
+                        <b class="text-base leading-6 mb-2 text-sub_cap">Service</b>
+                    </div>
+                    <a class="text-base mb-2 leading-6 text-ft font-medium hover:text-hover_color" href="">Jimdo Blog</a>
+                    <a class="text-base mb-2 leading-6 text-ft font-medium hover:text-hover_color" href="">Inspiration</a>
+                    <a class="text-base mb-2 leading-6 text-ft font-medium hover:text-hover_color" href="">Help Center</a>
+                    <a class="text-base mb-2 leading-6 text-ft font-medium hover:text-hover_color" href="">Contact Support</a>
+                </div>
+
+                <div class="botft mb-10 mt-10">
+                    <a class="text-base mr-6 leading-6 text-black font-medium hover:text-hover_color" href="">Legal notice</a>
+                    <a class="text-base mr-6 leading-6 text-black font-medium hover:text-hover_color" href="">Terms of Service</a>
+                    <a class="text-base mr-6 leading-6 text-black font-medium hover:text-hover_color" href="">Privacy Policy</a>
+                    <a class="text-base mr-6 leading-6 text-black font-medium hover:text-hover_color" href="">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+      </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

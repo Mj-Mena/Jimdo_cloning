@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 body{
     background-color: #f8f8f8;
     font-family: 'Euclid Circular A', sans-serif;
@@ -24,6 +26,8 @@ body{
   }
   .sec3_cont{
     grid-column-end: span 4;
+    grid-column-start: auto;
+    justify-self: end;
     gap: 48px;
     height: 90px;
   }
@@ -108,6 +112,49 @@ body{
     gap: 40px 40px;
     padding-top: 40px;
   }
+  @media(min-width :981px) {
+    .sec1_cont ,.sec2_cont ,.sec3_cont{
+      gap: 24px;
+    }
+    .burger{
+      display: none;
+    }
+  }
+  @media (max-width : 980px) {
+    .sec2_cont ,.sec3_cont{
+      display: none;
+    }
+    .burger{
+      cursor: pointer;
+      display: block;
+      height: 19px;
+      position: relative;
+      transform: rotate(0deg);
+      transition: .5s ease-in-out;
+      width: 25px;
+      z-index: 1;
+      }
+    .HamburgerButton-module--iconHamburgerLine--2c0d1{
+        background-color: #001453;
+      display: block;
+      height: 3px;
+      left: 0;
+      opacity: 1;
+      position: absolute;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+      width: 100%;
+    }
+    .smol_size {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .land_small{
+      grid-template-columns: repeat(6,1fr);
+    }
+  }
+  
   .land_left {
     grid-column-end: span 5;
     grid-column-start: 1 ;
@@ -115,6 +162,12 @@ body{
   }
   .ln125 {
     line-height: 125%;
+  }
+  .ln133{
+    line-height: 133%;
+  }
+  .ln155{
+    line-height: 155%;
   }
   .ln140 {
     line-height: 140%;
@@ -152,6 +205,7 @@ body{
     grid-column-start: 2;
   }
   .nav_container{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .141);
     z-index: 999999;
     height: 90px;
   }
@@ -175,8 +229,236 @@ body{
     grid-column-end: span 5;
     grid-column-start: 2;
   }
+  .wkp_text{
+    grid-column-end: span 8;
+  }
+  .pic1{
+    grid-column-end: span 6 ;
+  }
+  .pic2{
+    grid-column-end: span 6 ;
+  }
+  .pic3{
+    grid-column-end: span 6 ;
+  }
+  .pic4{
+    grid-column-end: span 6 ;
+  }
   .htm_pic{
     grid-column-end: span 4;
-    padding: 40px 0;
+    padding: 40px  0;
     grid-column-start: 8;
   }
+  .order_list{
+    border-bottom: 2px solid #d5d5d5;
+    border-top: 2px solid #d5d5d5;
+  }
+  .order_list > ol {
+    counter-reset: css-counter 0;
+    
+  }
+  .order_list > ol > li{
+    text-align: left;
+    counter-increment: css-counter 1 ;
+  }
+  .order_list> ol > li::before {
+    content: counter(css-counter) ". ";
+    display: inline-block;
+    font-weight: 500;
+    height: 20px;
+    line-height: 20px;
+    margin-left: -28px;
+    margin-right: 10px;
+    text-align: center;
+    width: 20px;
+    color: #004ced;  
+  }
+  .st2{
+    transition: .5s;
+    padding: 16px 20px;
+    min-width: 250px;
+    max-width: 250px;
+    border: 2px solid #004ced;
+    line-height: 1.4;
+  }
+  .startnow_arrow{
+    margin-block: 20px;
+  }
+  .translate-y-half{
+transform: translateY(7px);
+  }
+  .brd {
+    border-bottom: 1px solid black;
+    width: fit-content;
+  }
+  .get_portfolio_design{
+    grid-column-start: 2;
+    grid-column-end: span 10;
+  }
+ /*Carousel CSS*/
+ .swiper {
+  width: 100%;
+  height: 500px;
+  scroll-behavior: smooth;
+  transition: .5s;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-slide img{
+  transition: .5s;
+  height: 100%;
+  min-width: 700px;
+  transform: scale(.85);
+}
+.swiper-slide-prev{
+  transition: .5s;
+  position: absolute;
+  left: -10%;
+  opacity: .5;
+}
+.swiper-slide-prev img{
+  transition: .5s;
+  transform: scale(.85);
+}
+.swiper-slide-active img{
+  transition: .5s;
+  transform: scale(1);
+}
+.swiper-slide-next img{
+  transition: .5s;
+  transform: scale(.85);
+}
+.swiper-slide-next{
+  position: absolute;
+  left: 10%;
+  opacity: .5;
+}
+.oP_div{
+  grid-column-end: span 8;
+  grid-column-start: 3;
+}
+.list_drop{
+  grid-column-end: span 10;
+  grid-column-start: 2;
+}
+.ol_bt{
+  border-bottom: 1px solid #e6e6e6;
+}
+.ins_info {
+  max-width: 70%;
+}
+.drop_info{
+  max-height: 0;
+  transition:max-height 0.50s ease-out;
+}
+.hauto{
+  max-height: 600px;
+  transition:max-height 0.50s ease-in;
+}
+.cross{
+  transition:transform 0.25s ease-out;
+  transform: rotate(0);
+}
+.rot{
+  transition:transform 0.25s ease-in;
+  transform: rotate(-135deg);
+}
+.showh2{
+  grid-column-end: span 12;
+}
+.lastgrid{
+  grid-column-end: span 4;
+  grid-column-start: auto;
+}
+.linefree{
+  grid-column-end: span 4;
+  border-bottom: 1px solid #000;
+  
+}
+.jfooter{
+  grid-column-end: span 4;
+  grid-column-start: auto;
+
+}
+.logoft{
+  grid-column-end: span 2;
+  grid-column-start: auto;
+}
+.fgrid{
+  display: flex;
+  grid-column-end: span 2;
+  grid-column-start: auto;
+}
+.botft{
+  grid-column-end: span 9;
+}
+.svgcl{
+  color: #001453;
+  
+}
+.swiper{
+  --swiper-pagination-bullet-size: 16px;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+@media (max-width : 980px) {
+  .land_left{
+    grid-column-end: span 4;
+    grid-column-start: 2;
+    align-self: center;
+
+  }
+  .land_right{
+    grid-column-end: span 4;
+    grid-column-start: 2;
+    align-self: center;
+  }
+  /*======small portfolio======*/
+  .smol_port{
+    grid-template-columns: repeat(6,1fr);
+  }
+  .inside_teaser{
+    grid-column-end: span 6;
+    grid-column-start: auto;
+  }
+  .changeGrid{
+    grid-template-columns: repeat(6,1fr);
+  }
+  .new_shoes, .help_s_pic{
+    grid-column-end: span 6;
+    grid-column-start: auto;
+    justify-self: center;
+    order: 1;
+  }
+  .bv_text_cont, .hs_text_cont{
+    grid-column-end: span 6;
+    grid-column-start: auto;
+    justify-self: center;
+    order: 2;
+  }
+  .hm{
+    font-size: 20px;
+  }
+  .htm_pic{
+    display: none;
+  }
+  .htm_text{
+    grid-column-start: 2;
+    grid-column-end: span 4;
+  }
+  .wkp_text{
+    grid-column-end: span 6;
+    grid-column-start: auto;
+  
+  }
+  .wkph1{
+    font-size: 32px;
+  }
+  .mb-2 img{
+    width: 100%;
+  }
+  .get_portfolio_design{
+    grid-column-end: span 6;
+    grid-column-start: auto;
+  }
+}
