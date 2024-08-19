@@ -85,11 +85,29 @@ body {
   display: none;
   transition: 0.3s;
 }
-
+.webnavbtn:focus-within .d1{
+  display: inline-flex;
+}
+.webnavbtn2:focus-within .d2{
+  display: inline-flex;
+}
+.webnavbtn3:focus-within .d3{
+  display: inline-flex;
+}
+.webnavbtn4:focus-within .d4{
+  display: inline-flex;
+}
+.webnavbtn5:focus-within .d5{
+  display: inline-flex;
+}
 .first:hover .d1 {
   display: inline-flex;
 }
+
 .second:hover .d2 {
+  display: inline-flex;
+}
+.secondbtn:focus-within .d2{
   display: inline-flex;
 }
 .third:hover .d3 {
@@ -313,9 +331,10 @@ body {
   transform: scale(0.85);
 }
 .swiper-slide-prev {
+ 
   transition: 0.5s;
   position: absolute;
-  left: -10%;
+  left: -300px;
   opacity: 0.5;
 }
 .swiper-slide-prev img {
@@ -325,14 +344,20 @@ body {
 .swiper-slide-active img {
   transition: 0.5s;
   transform: scale(1);
+ 
+}
+.swiper-slide-active{
+  display: flex;
+  justify-content: center;
 }
 .swiper-slide-next img {
   transition: 0.5s;
   transform: scale(0.85);
 }
 .swiper-slide-next {
+ 
   position: absolute;
-  left: 10%;
+  left: 300px;
   opacity: 0.5;
 }
 .oP_div {
@@ -398,6 +423,9 @@ body {
 .swiper {
   --swiper-pagination-bullet-size: 16px;
   --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+.footer_mobile {
+  display: none;
 }
 @media (max-width: 980px) {
   .land_left {
@@ -481,4 +509,160 @@ body {
     grid-column-end: span 6;
     grid-column-start: auto;
   }
+  .footer_cont{ 
+    display: none;
+  }
+  .main-cont-footer{
+      grid-column-end: span 6;
+      grid-column-start: auto;
+  }
+  .footer_mobile{
+    display: block;
+  }
+}
+
+/*======Mobile View=========*/
+.cross {
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    width: 25px;
+    z-index: 1;
+}
+.span_ins_cross{
+  left: 50%;
+    top: 18px;
+    width: 0;
+    background-color: rgb(176, 102, 102);
+    background-color: #001453;
+    display: block;
+    height: 3px;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    width: 100%;
+}
+.line2{
+  transform: rotate(45deg);
+}
+.line4{
+  transform: rotate(-45deg);
+}
+.mobile_nav{
+  justify-content: space-between;
+  margin: 0 20px;
+  align-items: center;
+  height: 68px;
+  z-index: 4;
+}
+.mb-nav-cont{
+  height: 68px;
+
+}
+.bgdrop{
+  background-color: rgba(0, 0, 0, .6);
+  display:  none;
+  z-index: 20;
+}
+.main-white-cont{
+  width: calc(100% - 70px);
+}
+.warpall{
+  width:100%;  ;
+}
+.wrapall2{
+  width:100%;
+
+}
+
+.sec1mob{
+  padding: 12px 20px;
+}
+.inside_cont{
+  flex: 1 1 ;
+}
+.singbtn{
+  max-width: 360px;
+  background-color: #001453;
+  border: 2px solid #001453;
+  color: #fff;
+  border-radius: 4px;
+  padding: 12px;
+  text-align: center;
+  max-width: 380px;
+}
+.log{
+  max-width: 360px;
+  background-color: #fff;
+  border: 2px solid #001453;
+  color: #001453;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px;
+  max-width: 380px;
+}
+.wbcont{
+  padding: 12px 20px;
+  display: none;
+}
+.wbcont_content{
+  display: none;
+  flex-direction: column;
+}
+.wbcont_content2{
+  display: none;
+  flex-direction: column;
+}
+.wbcont_content3{
+  display: none;
+  flex-direction: column;
+}
+.wbcont_content4{
+  display: none;
+  flex-direction: column;
+}
+.wbcont_content5{
+  display: none;
+  flex-direction: column;
+}
+.index-module--mobileWrapper--8f802 .index-module--selection--83f64 {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  border: 0;
+  box-sizing: initial;
+  color: #001453;
+  cursor: pointer;
+  display: block;
+  font: inherit;
+  font-weight: 500;
+  height: 32px;
+  margin: 0;
+  padding: 8px 20px 8px 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  z-index: 1;
+}
+.lang-cont {
+  grid-column-end: span 6;
+  grid-column-start: auto;
+  padding: 20px 0 ;
+}
+.arrowdown{
+  right: 42%;
+}
+.list_footer1 , .list_footer2 , .list_footer3{
+  border: 2px solid #004ced;
+  margin-bottom: 32px;
+  padding: 20px;
+  text-align: left;
+  display: none;
 }
